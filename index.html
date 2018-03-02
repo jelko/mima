@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Mimas Wolke</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fine Uploader S3 No Server Demo">
+    <meta name="author" content="Widen">
+
+    <script type="text/template" id="qq-template">
+        <div class="qq-uploader-selector qq-uploader">
+            <div class="qq-upload-button-selector qq-upload-button">
+                <div>Dateien auswählen</div>
+            </div>
+            <div class="qq-upload-drop-area-selector uploader-drop-zone">
+                <span class="drop-zone-text">Dateien hier ablegen</span>
+                <ul class="qq-upload-list-selector qq-upload-list">
+                    <li class="file-container">
+                        <div class="qq-progress-bar-container-selector">
+                            <div class="qq-progress-bar-selector qq-progress-bar"></div>
+                        </div>
+                        <div class="file-info">
+                            <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                            <img class="qq-thumbnail-selector" qq-max-size="50" qq-server-scale>
+                            <span class="qq-upload-file-selector qq-upload-file"></span>
+                            <span class="qq-upload-size-selector qq-upload-size"></span>
+                        </div>
+                        <button class="qq-upload-cancel-selector qq-upload-cancel" href="#">Cancel</button>
+                        <button class="qq-upload-retry-selector qq-upload-retry" href="#">Retry</button>
+                        <span class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                        <a class="view-btn" target="_blank" style="display: none;">
+                            <input type="button" value="View">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Verarbeite Dateien...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+        </div>
+    </script>
+
+    <script>
+        var s3DemoGlobals = {};
+    </script>
+   
+    <link href="node_modules/fine-uploader/s3.jquery.fine-uploader/fine-uploader.css" rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/fine-uploader/s3.jquery.fine-uploader/s3.jquery.fine-uploader.min.js"></script>
+    <script type="text/javascript" src="uploader.js"></script>
+    <script src="http://sdk.amazonaws.com/js/aws-sdk-2.0.0.min.js"></script>
+
+    </head>
+<body>
+
+    <div id="fine-uploader"></div>
+
+</body>
+</html>
